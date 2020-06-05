@@ -56,7 +56,6 @@ public class TicTacToe {
 			turns.add(turn);
 			//ボードが持っているセルにマークを記入させる
 			turn.addMark(board);
-			//board.addMark(turn);
 			//盤を表示
 			board.showBoard();
 		}
