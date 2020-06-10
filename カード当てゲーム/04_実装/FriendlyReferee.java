@@ -43,12 +43,6 @@ public class FriendlyReferee extends Referee {
 	}
 
 	
-
-	if(judge){
-		System.out.println("カードは一致しました");
-	}else{
-		System.out.println("カードは一致していません");
-	}
 	return judge;
 	
 }
