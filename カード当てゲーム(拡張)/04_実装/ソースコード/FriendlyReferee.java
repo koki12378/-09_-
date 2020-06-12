@@ -22,10 +22,6 @@ public class FriendlyReferee extends Referee {
 		
 	System.out.println();
 
-
-	
-	System.out.println();
-
 	System.out.print("スート：");
 	if(card.getSuit() == answer.getSuit()){
 		System.out.println("一致");
