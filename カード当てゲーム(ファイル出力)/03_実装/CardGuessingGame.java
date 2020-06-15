@@ -12,7 +12,6 @@ public class CardGuessingGame {
 	private Player currentPlayer;
 	private PlayMode playMode;
 	List<CardSelection> inputHistry = new ArrayList<CardSelection>();
-	private FileOutPut fileOutPut;
 	
 	public CardGuessingGame(Deck deck) {
 		this.deck = deck;
@@ -44,7 +43,7 @@ public class CardGuessingGame {
 	public void start() {
 		boolean flag;
 		Card card = null;
-		fileOutPut = new FileOutPut();
+		FileOutPut fileOutPut = new FileOutPut();
 		
 		ref.specifyAnswerCard(deck);
 		if(playMode == PlayMode.MULTIPLAY) {
