@@ -66,7 +66,7 @@ public class CardGuessingGame {
 			}
 		}
 		showWinner();
-		fileOutPut.outPut(inputHistry);
+		fileOutPut.outPut(inputHistry,playMode);
 	}
 	
 	public PlayMode selectPlayMode() {

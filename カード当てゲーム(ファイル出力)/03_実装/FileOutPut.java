@@ -6,11 +6,15 @@ import java.util.List;
 
 public class FileOutPut {
 	
-	public void outPut(List<CardSelection> inputHistry) {
+	public void outPut(List<CardSelection> inputHistry,PlayMode playMode) {
 		try(FileWriter fw = new FileWriter("C:\\Users\\Administrator\\Desktop\\ミニプロジェクト\\test.txt")){
-			fw.write("<履歴>\n");
+			fw.write("～履歴～\n");
 			for(CardSelection history:inputHistry) {
-				fw.write("<" + history.getName() + "> 数：" + history.getCard().getNumber() + " ");
+				if(playMode == PlayMode.SINGLEPLAY) {
+					fw.write("数：" + history.getCard().getNumber() + " ");
+				}else {
+					fw.write("<" + history.getName() + "> 数：" + history.getCard().getNumber() + " ");
+				}
 				switch(history.getCard().getSuit()) {
 				case SPADE:
 					fw.write("スート：♠\n");
